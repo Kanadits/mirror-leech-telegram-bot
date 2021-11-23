@@ -9,4 +9,6 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+RUN chmod +x aria.sh && chmod 600 .netrc
+
 CMD ["bash", "start.sh"]
